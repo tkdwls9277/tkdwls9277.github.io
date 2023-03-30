@@ -4,20 +4,20 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Mediator"
+title: "wwjd" # 사이트 이름
 description: > # this means to ignore newlines until "email:"
-  A Jekyll theme - Medium inspired
+  for coding
 
-email: a-mail@mail.mail
+email: tkdwls9277@gmail.com
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.png"
 float_logo: true # true, false (default)
 
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: "Dirk Fabisch"
-author: "Dirk Fabisch"
+name: "이상진"
+author: "이상진"
 author_image: "/assets/images/author.jpg"
 
 paginate: 5
