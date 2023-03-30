@@ -1,11 +1,36 @@
-<!-- footer start -->
+<!-- The Footer -->
 
-<footer class="site-footer">
-  <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe!</span></a>
-    <div class="inner">
-         <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.</section>
-         <section class="poweredby">Made with <a href="http://jekyllrb.com"> Jekyll</a></section>
+<footer>
+  <div class="container pl-lg-4 pr-lg-4">
+    <div class="d-flex justify-content-between align-items-center text-muted ml-md-3 mr-md-3">
+      <div class="footer-left">
+        <p class="mb-0">
+          © {{ 'now' | date: "%Y" }}
+          <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
+          {% if site.data.locales[site.lang].copyright.brief %}
+          <span data-toggle="tooltip" data-placement="top"
+            title="{{ site.data.locales[site.lang].copyright.verbose }}">{{ site.data.locales[site.lang].copyright.brief }}</span>
+          {% endif %}
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <p class="mb-0">
+
+          {%- capture _platform -%}
+          <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+          {%- endcapture -%}
+
+          {%- capture _theme -%}
+          <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+          {%- endcapture -%}
+
+          {{ site.data.locales[site.lang].meta
+            | default: 'Using the :PLATFORM theme :THEME.'
+            | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
+          }}
+        </p>
+      </div>
     </div>
+  </div>
 </footer>
-
-<!-- footer end -->
