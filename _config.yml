@@ -4,28 +4,28 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Mediator"
+title: "wwjd" # 사이트 이름
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+  for coding
 
-email: a-mail@mail.mail
+email: tkdwls9277@gmail.com
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.png"
 float_logo: true # true, false (default)
 
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
+name: "이상진"
+author: "이상진"
 author_image: "/assets/images/author.jpg"
 
-paginate:	5
+paginate: 5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
+url: "http://tkdwls9277.github.io" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
-twitter_handle: '@dirkfabisch'
+twitter_handle: "@dirkfabisch"
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
@@ -34,27 +34,26 @@ twitter_handle: '@dirkfabisch'
 
 # social icons and sharing options
 social:
-  - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
+  - icon: twitter
+    url: https://twitter.com/dirkfabisch
     desc: Follow me on twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
 
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
+  #  - icon:	facebook
+  #    url:	https://facebook.com/???
+  #    desc: Connect with me facebook
+  #    share_url: https://www.facebook.com/sharer.php
+  #    share_title: ?t=
+  #    share_link: "&amp;u="
 
-  - icon:	github
-    url:	https://github.com/dirkfabisch
-    desc:	Fork me on github
+  - icon: github
+    url: https://github.com/dirkfabisch
+    desc: Fork me on github
     share_url:
     share_title:
     share_link:
-
 #  - icon:	google-plus
 #    url:	https://google.com/???
 #    desc:	Add me on google+
