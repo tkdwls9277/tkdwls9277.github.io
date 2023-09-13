@@ -1,95 +1,95 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="og:site_name" content="혜람과 상진의 결혼식에 초대합니다" />
+        <link rel="canonical" href="https://sooyeonsungdoo.github.io" />
+        <!-- <meta name="twitter:url" content="https://sooyeonsungdoo.github.io" />
+        <meta name="og:url" content="https://sooyeonsungdoo.github.io" /> -->
+        <title>혜람과 상진의 결혼식에 초대합니다</title>
+        <meta name="twitter:title" content="혜람과 상진의 결혼식에 초대합니다" />
+        <meta name="og:title" content="혜람과 상진의 결혼식에 초대합니다" />
+        <meta name="description" content="2020년 10월 10일 도림동 성당" />
+        <meta name="twitter:description" content="2020년 10월 10일 도림동 성당" />
+        <meta name="og:description" content="2020년 10월 10일 도림동 성당" />
+        <meta name="twitter:card" content="함께할 때 비로소 꺠닫는 사랑임을 영원히 기억하며 살겠습니다" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
+        <style></style>
+    </head>
+    <body>
+        <div class="imageContainer">
+            <img src="image/thumbnail1.JPG" id="mainImage" />
+        </div>
+        <br />
+        <h1>혜람과 상진의 결혼식에 초대합니다</h1>
 
-<div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
-        Teaser Image
-    </div>
-</div>
+        <div id="parents">
+            이문기 🤍 고은경<span class="suffix">의 장남 </span> <span style="font-weight: bold">이상진</span><br />
+            아버님 🤍 어머님<span class="suffix">의 장녀 </span> <span style="font-weight: bold">석혜람</span>
+        </div>
+        <br />
+        <h2>초대의 말</h2>
 
-<header class="blog-header">
-    {% if site.logo %}
-      <a class="blog-logo" href="{{site.url}}{{site.baseurl}}" style="background-image: url('{{ site.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
-    {% endif %}
-    <h1 class="blog-title">{{ site.title }}</h1>
-    <h2 class="blog-description">{{ site.description }}</h2>
-    <div class="custom-links">
-      {% for social in site.social %}
-        {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
-              <i class="fa fa-{{ social.icon }}"></i>
-            </a>
-            &nbsp;&nbsp;·&nbsp;&nbsp;
-        {% endif %}
-      {% endfor %}
-      <a href={{ "/about/" | prepend: site.baseurl }}>About</a>
-    </div>
-</header>
+        <p class="poem">
+            (초대의 말 예시) 함께할 때에 비로소 깨닫는 사랑임을 <br />
+            영원히 기억하며 살겠습니다. <br />
+            귀한 걸음 해주시어 <br />
+            저희의 첫 시작을 축복해 주세요. <br />
+            <br />
+        </p>
+        <br />
 
-
-<main class="content" role="main">
-
-    {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
-
-    <div class="container featured">
-      {% for post in site.tags.featured %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+        <h2>일시 및 장소</h2>
+        <div id="date">
+            2024년 08월 31일 토요일 오후 3시 30분 <br />
+            채플웨딩홀 아벤티움<br />
+            <span id="address">서울 중구 청파로 464 3층</span>
+        </div>
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div align="center" max-width="600px">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <div id="daumRoughmapContainer1694615483752" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        </div>
+        <br />
+        <br />
+        <p id="shuttle">
+            신도림역 2번 출구 앞에서 셔틀버스 수시 왕복 운행<br />
+            (14:30 ~ 17:30) <br />
+            2번 출구로 나오시면 안내 봉사자가 있습니다.
+        </p>
+        <br />
+        <br />
+        <a href="https://www.icloud.com/sharedalbum/#B0lGWZuqD0MkiBT" target="_blank">
+            <div class="grid-container">
+                <img class="grid-item" src="image/thumbnail1.JPG" />
+                <img class="grid-item" src="image/thumbnail2.JPG" />
+                <img class="grid-item" src="image/thumbnail3.JPG" />
+                <img class="grid-item" src="image/thumbnail4.JPG" />
+                <img class="grid-item" src="image/thumbnail5.JPG" />
+                <img class="grid-item" src="image/thumbnail6.JPG" />
             </div>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
+        </a>
+        <footer>
+            화환 및 일반 쌀 화환 모두 정중히 사양합니다. <br />
+            축하 화환 대신에 아래 연락처로 '축복미'를 보내주시면 어려운 이웃에게 전달하겠습니다. <br />
+            <br />
+            까리따스분과 이연희 베네란다 (<a href="tel:010-5380-4747">010-5380-4757</a>)<br />
+            후원계좌: 신협 137-002-256160 이연희
+            <br />
+        </footer>
+        <br />
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-    <h5 class="index-headline normal"><span>Regular</span></h5>
-    {% endif %}
-
-    <div class="cf frame">
-      {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
-    </nav>
-
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
-
-</main>
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                timestamp: "1694615483752",
+                key: "2g75m",
+                mapWidth: "640",
+                mapHeight: "360",
+            }).render();
+        </script>
+    </body>
+</html>
