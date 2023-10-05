@@ -1,95 +1,144 @@
 <!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="og:site_name" content="혜람과 상진의 결혼식에 초대합니다" />
-        <link rel="canonical" href="https://sooyeonsungdoo.github.io" />
-        <!-- <meta name="twitter:url" content="https://sooyeonsungdoo.github.io" />
-        <meta name="og:url" content="https://sooyeonsungdoo.github.io" /> -->
-        <title>혜람과 상진의 결혼식에 초대합니다</title>
-        <meta name="twitter:title" content="혜람과 상진의 결혼식에 초대합니다" />
-        <meta name="og:title" content="혜람과 상진의 결혼식에 초대합니다" />
-        <meta name="description" content="2020년 10월 10일 도림동 성당" />
-        <meta name="twitter:description" content="2020년 10월 10일 도림동 성당" />
-        <meta name="og:description" content="2020년 10월 10일 도림동 성당" />
-        <meta name="twitter:card" content="함께할 때 비로소 꺠닫는 사랑임을 영원히 기억하며 살겠습니다" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/style.css" type="text/css" />
-        <style></style>
-    </head>
-    <body>
-        <div class="imageContainer">
-            <img src="image/thumbnail1.JPG" id="mainImage" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link href="image/icon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>COYOTE</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap">
+        <h1><img src="image/logo.png" alt="codemind" /></h1>
+        <div class="Gnb">
+          <div class="sns">
+            <a href="https://blog.naver.com/codemind" target="_blank"
+              ><img src="image/common/sns-01.png" alt="네이버블로그"
+            /></a>
+            <a href="https://www.facebook.com/IntotheSource/" target="_blank"
+              ><img src="image/common/sns-02.png" alt="페이스북"
+            /></a>
+            <a href="https://www.youtube.com/channel/UCRq9HS1PgqNJXdRadUgcoMQ" target="_blank"
+              ><img src="image/common/sns-03.png" alt="유튜브"
+            /></a>
+          </div>
+          <select id="combo-box" class="lang">
+            <option value="en" onclick="changeLanguage('en')">English</option>
+            <option value="ko" onclick="changeLanguage('ko')">한국어</option>
+          </select>
         </div>
-        <br />
-        <h1>혜람과 상진의 결혼식에 초대합니다</h1>
-
-        <div id="parents">
-            이문기 🤍 고은경<span class="suffix">의 장남 </span> <span style="font-weight: bold">이상진</span><br />
-            아버님 🤍 어머님<span class="suffix">의 장녀 </span> <span style="font-weight: bold">석혜람</span>
+      </div>
+    </header>
+    <div id="sub-container">
+      <div class="prod-contents">
+        <div class="img"><img src="image/sub/prod-01.png" /></div>
+        <div class="con">
+          <h2 class="color-blue">COYOTE</h2>
+          <p class="s-tit">소프트웨어 자동검증 도구</p>
+          <p>
+            완전자동화! 커버리지 향상! 유연한 설정! 등 COYOTE는 사용자 편의를 최대화 하도록 개발된 동적 검증도구입니다.
+          </p>
+          <div class="btn-wrap">
+            <a href="image/down/coyote-brochure.pdf" target="_blank" class="btn btn-blue">제품다운로드</a>
+            <a href="https://www.codemind.co.kr/cs/qna.php" class="btn btn-gray">문의하기</a>
+          </div>
         </div>
-        <br />
-        <h2>초대의 말</h2>
-
-        <p class="poem">
-            (초대의 말 예시) 함께할 때에 비로소 깨닫는 사랑임을 <br />
-            영원히 기억하며 살겠습니다. <br />
-            귀한 걸음 해주시어 <br />
-            저희의 첫 시작을 축복해 주세요. <br />
-            <br />
+      </div>
+      <div class="emphasis-txt">
+        <p class="tit">
+          심볼릭테스팅 기술과 머신러닝 기술이 융합된 혁신적인 <br />완전자동 화이트박스 테스팅 도구는 사용자에게 놀라운
+          경험을 선사합니다.
         </p>
-        <br />
-
-        <h2>일시 및 장소</h2>
-        <div id="date">
-            2024년 08월 31일 토요일 오후 3시 30분 <br />
-            채플웨딩홀 아벤티움<br />
-            <span id="address">서울 중구 청파로 464 3층</span>
-        </div>
-        <!-- * 카카오맵 - 지도퍼가기 -->
-        <!-- 1. 지도 노드 -->
-        <div align="center" max-width="600px">
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <div id="daumRoughmapContainer1694615483752" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-        </div>
-        <br />
-        <br />
-        <p id="shuttle">
-            신도림역 2번 출구 앞에서 셔틀버스 수시 왕복 운행<br />
-            (14:30 ~ 17:30) <br />
-            2번 출구로 나오시면 안내 봉사자가 있습니다.
+        <p>
+          COYOTE는 단위 테스트 완전 자동 도구로서 원클릭으로 테스트 케이스 작성부터 실행, 결과 분석까지 단위 테스트의 전
+          과정을 완벽히 수행합니다. COYOTE 단위 테스트 자동화 도구를 도입하면 테스팅 엔지니어의 업무 생산성을 3~6배 이상
+          향상 시킬뿐만 아니라 테스팅 비용 및 투입공수를 최소화 할 수 있습니다.
         </p>
-        <br />
-        <br />
-        <a href="https://www.icloud.com/sharedalbum/#B0lGWZuqD0MkiBT" target="_blank">
-            <div class="grid-container">
-                <img class="grid-item" src="image/thumbnail1.JPG" />
-                <img class="grid-item" src="image/thumbnail2.JPG" />
-                <img class="grid-item" src="image/thumbnail3.JPG" />
-                <img class="grid-item" src="image/thumbnail4.JPG" />
-                <img class="grid-item" src="image/thumbnail5.JPG" />
-                <img class="grid-item" src="image/thumbnail6.JPG" />
+      </div>
+      <div class="prod-field">
+        <span>자동차 전장 SW</span>
+        <span>자동차 파워트레인 제어 SW</span>
+        <span>통신장비 SW</span>
+        <span>금융 SW</span>
+        <span>로봇 SW</span>
+        <span>항공 SW</span>
+      </div>
+      <div class="point-wrap">
+        <h3>주요특징</h3>
+        <ul>
+          <li>
+            <img src="image/sub/prod-02.png" />
+            <p>단위 테스트의 궁극적인 자동화</p>
+          </li>
+          <li>
+            <img src="image/sub/prod-03.png" />
+            <p>테스트 케이스 100% 완전 자동화</p>
+          </li>
+          <li>
+            <img src="image/sub/prod-04.png" />
+            <p>임베디드 SW 화이트박스 테스팅 완전 자동화 도구</p>
+          </li>
+          <li>
+            <img src="image/sub/prod-05.png" />
+            <p>원클릭 완전 자동화</p>
+          </li>
+          <li>
+            <img src="image/sub/prod-06.png" />
+            <p>테스트 드라이버 코드 100% 완전 자동화</p>
+          </li>
+          <li>
+            <img src="image/sub/prod-07.png" />
+            <p>테스트 스텁 코드 100% 완전 자동화</p>
+          </li>
+          <li>
+            <img src="image/sub/prod-08.png" />
+            <p>코드 커버리지 90% 이상 달성</p>
+          </li>
+        </ul>
+      </div>
+      <div class="effect">
+        <h3>기대효과</h3>
+        <div class="effect-con">
+          <div class="con">
+            <div>
+              <p class="tit">테스팅 비용 절감 및 고객만족</p>
+              <p>전체 개발비의 40%, 많게는 60%까지 늘어난 소프트웨어 테스팅 비용을 획기적으로 절감</p>
             </div>
-        </a>
-        <footer>
-            화환 및 일반 쌀 화환 모두 정중히 사양합니다. <br />
-            축하 화환 대신에 아래 연락처로 '축복미'를 보내주시면 어려운 이웃에게 전달하겠습니다. <br />
-            <br />
-            까리따스분과 이연희 베네란다 (<a href="tel:010-5380-4747">010-5380-4757</a>)<br />
-            후원계좌: 신협 137-002-256160 이연희
-            <br />
-        </footer>
-        <br />
-        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-        <!-- 3. 실행 스크립트 -->
-        <script charset="UTF-8">
-            new daum.roughmap.Lander({
-                timestamp: "1694615483752",
-                key: "2g75m",
-                mapWidth: "640",
-                mapHeight: "360",
-            }).render();
-        </script>
-    </body>
+            <div>
+              <p class="tit">개발기간 단축</p>
+              <p>테스트 하니스 및 테스트 케이스를 고속으로 자동 생성하여 개발기간 단축</p>
+            </div>
+            <div>
+              <p class="tit">소프트웨어 품질향상 및 신뢰성 확보</p>
+              <p>체계적이고 유의미한 테스트케이스 확 보가능 및 테스트 효과를 극대화 하여 신뢰성 확보</p>
+            </div>
+            <div>
+              <p class="tit">QA 프로세스 개선</p>
+              <p>단위 테스트를 자동화함으로써 체계적인 테스트 프로세스 구축 및 QA 프로세스 개선</p>
+            </div>
+          </div>
+          <div class="effect-img">
+            <img src="image/sub/prod-09.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function changeLang(lang) {
+        if (lang === "en") {
+          document.documentElement.lang = "en"; // 영어로 변경
+        } else {
+          document.documentElement.lang = "ko"; // 한국어로 변경
+        }
+      }
+      document.getElementById("combo-box").addEventListener("change", function () {
+        var selectedOption = document.getElementById("combo-box").value;
+        document.documentElement.lang = selectedOption;
+        if (selectedOption === "en") {
+        } else {
+        }
+      });
+    </script>
+  </body>
 </html>

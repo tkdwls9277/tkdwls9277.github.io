@@ -1,110 +1,498 @@
-* {
-    word-break: keep-all;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font: -apple-system-body;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ul,
+li,
+ol,
+dl,
+dd,
+dt {
+  list-style: none;
+  word-break: keep-all;
+  line-height: 1.5;
 }
-
-/* Text Elements */
+html,
+body,
+div,
+p,
+span,
+strong,
+b,
+em,
+iframe,
+pre,
 h1,
-h2 {
-    margin: 2rem;
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+dl,
+dt,
+dd,
+fieldset,
+form,
+legend,
+label,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+ul,
+ol,
+li,
+a,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  word-break: keep-all;
 }
-h1 {
-    font-size: 1.7em;
-    margin-bottom: 20px;
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.05);
+  background: #fff;
 }
-p {
-    line-height: 1.8;
-    margin-bottom: 10px;
+.header-wrap {
+  width: calc(100% - 200px);
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 0;
 }
-
-a {
-    color: inherit;
+.header-wrap nav {
+  float: left;
+  text-align: center;
+  width: calc(100% - 460px);
+  margin: 0 auto;
 }
-/* Typography */
-
-/* Content Elements */
-body {
-    background: #fff;
-    color: #000;
-    text-align: center;
-}
-
-footer {
-    margin: 2rem;
-    color: #8a8a8a;
-}
-
-#mainImage {
-    max-width: none;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
+.header-wrap h1 {
+  float: left;
+  width: 230px;
+  line-height: 90px;
 }
 
 img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-.imageContainer {
-    position: relative;
+  border: 0;
+  line-height: 0;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+/* Gnb */
+.header-wrap .Gnb {
+  width: 230px;
+  float: right;
+  text-align: right;
+}
+.Gnb > div {
+  display: inline-block;
+  line-height: 90px;
+  vertical-align: middle;
+}
+.Gnb .toggle-nav {
+  position: relative;
+  z-index: 99;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 0;
+}
+.Gnb .toggle-nav .line {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  display: inline-block;
+  background: #383838;
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.Gnb .toggle-nav .line:before {
+  content: "";
+  display: inline-block;
+  background: #383838;
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+}
+.Gnb .toggle-nav .line:after {
+  content: "";
+  display: inline-block;
+  background: #383838;
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+}
+.Gnb .lang {
+  font-size: 11px;
+  background: url(../images/common/lang-arrow.png) no-repeat 100% 7px;
+  position: relative;
+  width: 60px;
+  font-weight: 700;
+  margin: 0 20px;
+  text-align: left;
+}
+.Gnb .lang img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.Gnb .lang span {
+  display: block;
+  line-height: 21px;
+  cursor: pointer;
+}
+.Gnb .lang .over {
+  display: none;
+  position: absolute;
+  width: calc(100% + 15px);
+  line-height: 30px;
+}
+.Gnb .lang .over.open {
+  display: block;
+  left: 0;
+  border: 1px solid #ddd;
+  left: 0;
+  margin-top: 10px;
+  border-radius: 50px;
+  text-align: center;
+  background: #fff;
+}
+.Gnb .sns a {
+  margin-right: 7px;
+  font-size: 0;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 21px;
 }
 
-.grid-item {
-    padding: 4px;
-    text-align: center;
+/*서브*/
+#sub-container {
+  margin-top: 190px;
+}
+#sub-container h3 {
+  font-size: 42px;
+  text-align: center;
+}
+#sub-container h4 {
+  font-size: 30px;
+  position: relative;
+  font-weight: 600;
+  margin-top: 50px;
+  text-align: left;
+}
+#sub-container h4.mt-0 {
+  margin-top: 0;
+}
+.color-blue {
+  color: #1f70ff;
+}
+.btn-blue {
+  background: #1f70ff url(../image/sub/btn-arrow.png) no-repeat calc(100% - 30px) 50%;
+}
+.btn-gray {
+  background: #c6c7cb url(../image/sub/btn-arrow.png) no-repeat calc(100% - 30px) 50% !important;
 }
 
-/* Content Elements */
+/*제품소개*/
+.prod-contents {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.prod-contents .img {
+  width: 55%;
+}
+.prod-contents .img img {
+  max-width: 100%;
+}
+.prod-contents .con {
+  width: 45%;
+  padding-left: 50px;
+  font-size: 20px;
+  color: #888;
+}
+.prod-contents .con h2 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.prod-contents .con .s-tit {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 40px;
+}
+.btn-wrap {
+  margin-top: 50px;
+}
+.btn-wrap .btn {
+  display: inline-block;
+  width: 45%;
+  max-width: 220px;
+  border-radius: 50px;
+  padding: 0 30px;
+  font-size: 18px;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:active,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
 
-/* NitPicky Stylings */
-.poem {
-    line-height: 2;
+.emphasis-txt {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  font-weight: 300;
+  margin: 80px auto 50px auto;
+  font-size: 20px;
+  width: 90%;
+  max-width: 1050px;
+  padding: 80px 0;
 }
-.suffix {
-    font-size: 0.9rem;
+.emphasis-txt:after,
+.emphasis-txt:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: url(../images/sub/quote_img01.png) no-repeat 0 0;
+  background-size: 100%;
+  top: 0px;
+  margin-left: -20px;
+}
+.emphasis-txt:after {
+  background: url(../images/sub/quote_img02.png) no-repeat 0 0;
+  background-size: 100%;
+  top: auto;
+  bottom: 0px;
+}
+.emphasis-txt .tit {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+.prod-field {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  margin: 50px auto 100px auto;
+}
+.prod-field span {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #f6f6f6;
+  border-radius: 50px;
+  margin: 3px 0;
 }
 
-#daumRoughmapContainer1597651152951 {
-    width: 80%;
-    max-width: 640px;
-    align: center;
+.prod-contents .con .s-tit {
+  font-size: 30px;
 }
-#parents {
-    margin: 2rem;
-    line-height: 2.5;
+.prod-contents .img,
+.prod-contents .con {
+  width: calc(50%-15px);
+  box-sizing: border-box;
 }
-#date {
-    margin: 2rem;
-    line-height: 2;
+.prod-contents .con {
+  padding-left: 30px;
 }
-#address {
-    color: #8a8a8a;
+.prod-contents .con h2 {
+  font-size: 55px;
 }
-/* NitPicky Stylings */
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #222;
-        color: #ddd;
-    }
+.prod-contents .con .s-tit {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.prod-contents .con {
+  font-size: 16px;
 }
 
-/* Dynamic layout */
-@media (max-width: 600px) {
-    .wrapper {
-        padding: 40px 20px;
-    }
+.emphasis-txt {
+  font-size: 16px;
+  padding: 60px 0;
+}
+.emphasis-txt .tit {
+  font-size: 24px;
+}
+.emphasis-txt:after,
+.emphasis-txt:before {
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+}
+.prod-field span {
+  font-size: 14px;
+}
+
+/*주요 특징*/
+.point-wrap {
+  background: #f7f7f7;
+  padding: 100px 0;
+  text-align: center;
+}
+.point-wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1400px;
+  margin: 50px auto 0 auto;
+}
+.point-wrap li {
+  width: calc(100% / 5);
+  margin-right: calc(40px / 3);
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.point-wrap li:nth-child(4n) {
+  margin-right: 0;
+}
+.point-wrap li:nth-child(n + 5) {
+  margin-top: 15px;
+}
+.point-wrap li img {
+  margin-bottom: 15px;
+}
+.point-wrap li .s-txt {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.point-wrap .w3 li {
+  width: calc(100% / 3 - 10px);
+  margin-right: 15px;
+}
+.point-wrap .w3 li:nth-child(3n) {
+  margin-right: 0;
+}
+.point-wrap .w3 li:nth-child(n + 4) {
+  margin-top: 15px;
+}
+
+/*기대효과*/
+.effect {
+  width: 90%;
+  max-width: 1400px;
+  margin: 100px auto;
+  text-align: center;
+}
+.effect-con {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+.effect-con .con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.effect-con .con > div {
+  width: 40%;
+  max-width: 480px;
+  background: #a5b1eb;
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  z-index: 9;
+}
+.effect-con .con > div:nth-child(2),
+.effect-con .con > div:nth-child(3) {
+  background: #a4bfe5;
+}
+.effect-con .con > div:nth-child(n + 3) {
+  margin-top: 50px;
+}
+.effect-con .con > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 30px;
+  height: 18px;
+  background: url(../images/sub/effect-arrow01.png);
+  right: -20px;
+  bottom: 15px;
+}
+.effect-con .con .tit {
+  font-size: 27px;
+  font-weight: 700;
+}
+.effect-con .con > div:nth-child(2):after,
+.effect-con .con > div:nth-child(3):after {
+  background: url(../images/sub/effect-arrow02.png) 0 100%;
+}
+.effect-con .con > div:nth-child(2):after {
+  right: auto;
+  left: -20px;
+}
+.effect-con .con > div:nth-child(3):after {
+  bottom: auto;
+  top: 15px;
+  transform: rotate(-180deg);
+}
+.effect-con .con > div:nth-child(4):after {
+  bottom: auto;
+  top: 15px;
+  left: -20px;
+  right: auto;
+  transform: rotate(-180deg);
+}
+.effect-con .effect-img {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.effect-con .effect-img img {
+  width: 20%;
 }
