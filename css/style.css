@@ -452,7 +452,7 @@ a:hover {
   z-index: 1;
   width: 30px;
   height: 18px;
-  background: url(../images/sub/effect-arrow01.png);
+  background: url(../image/sub/effect-arrow01.png);
   right: -20px;
   bottom: 15px;
 }
@@ -462,7 +462,7 @@ a:hover {
 }
 .effect-con .con > div:nth-child(2):after,
 .effect-con .con > div:nth-child(3):after {
-  background: url(../images/sub/effect-arrow02.png) 0 100%;
+  background: url(../image/sub/effect-arrow02.png) 0 100%;
 }
 .effect-con .con > div:nth-child(2):after {
   right: auto;
@@ -494,4 +494,41 @@ a:hover {
 }
 .effect-con .effect-img img {
   width: 20%;
+}
+
+/*고객문의*/
+.cs-wrap {
+  background: rgb(145, 114, 242);
+  background: linear-gradient(
+    132deg,
+    rgba(145, 114, 242, 1) 0%,
+    rgba(141, 167, 223, 1) 63%,
+    rgba(138, 204, 209, 1) 100%
+  );
+  padding: 120px 0;
+  text-align: center;
+}
+.cs-wrap h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.cs-wrap .btn {
+  margin-top: 30px;
+}
+.cs-wrap .btn a {
+  display: inline-block;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  height: 60px;
+  line-height: 54px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  width: 90%;
+  max-width: 230px;
+  padding: 0 30px;
+  text-align: left;
+  background: url(../image/sub/btn-arrow.png) no-repeat calc(100% - 30px) 50%;
 }
