@@ -70,8 +70,18 @@ function updateProgress() {
   progress.style.width = percent + "%";
 }
 
+const FLIP_DURATION = 600; // ms, styles.css의 transition(.6s)과 일치
+
 /* ---------- 네비게이션 ---------- */
 function nextCard() {
+  /* 뒤집혀 있으면 앞면으로 돌려놓고, 애니메이션 끝난 뒤 실행 */
+  if (cardEl.classList.contains("flip")) {
+    cardEl.classList.remove("flip");
+    setTimeout(nextCard, FLIP_DURATION);
+    return;
+  }
+
+  /* ↓↓↓ 평소 nextCard 본체 ↓↓↓ */
   if (remaining.length === 0) {
     // 새 라운드
     remaining = [...cards.keys()];
@@ -82,7 +92,14 @@ function nextCard() {
   history.push(idx);
   showCard(idx);
 }
+
 function prevCard() {
+  if (cardEl.classList.contains("flip")) {
+    cardEl.classList.remove("flip");
+    setTimeout(prevCard, FLIP_DURATION);
+    return;
+  }
+
   if (history.length > 1) {
     history.pop(); // 현재 카드 제거
     const idx = history[history.length - 1];
