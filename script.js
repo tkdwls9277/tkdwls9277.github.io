@@ -4,6 +4,7 @@ const tests = [
   { id: "test2", label: "속담" },
   { id: "test3", label: "순우리말" },
   { id: "test4", label: "사자성어" },
+  { id: "test6", label: "최종" },
   // 새 문제집을 추가하려면 ↓ 이렇게
   // { id: "myWords", label: "내가 만든 단어장" }
 ];
